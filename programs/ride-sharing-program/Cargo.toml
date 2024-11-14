@@ -1,0 +1,21 @@
+[package]
+name = "ride-sharing-program"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "ride_sharing_program"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+
+[dependencies]
+anchor-lang = "0.24.2"
+solana-program = "1.9.13"
+time = "0.3.35"

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "types": ["mocha", "chai"],
+    "typeRoots": ["./node_modules/@types"],
+    "lib": ["es2015"],
+    "module": "commonjs",
+    "target": "es6",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,            // Enables importing JSON files
+    "strict": true,                       // Enables strict type checking
+    "skipLibCheck": true                  // Skips type checks of libraries in node_modules (speeds up compilation)
+  },
+  "include": ["src/**/*", "tests/**/*"],   // Adjust paths to include test files if needed
+  "exclude": ["node_modules"]
+}
